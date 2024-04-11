@@ -20,6 +20,12 @@ user_pref("browser.offline-apps.notify", true); //  Display a notification bar w
 user_pref("browser.pocket.enabled", false); //  Disable Pocket
 user_pref("extensions.pocket.enabled", false);
 
+/*** CACHE ***/
+user_pref("browser.cache.disk.enable", false); //Disable disk cache
+user_pref("browser.privatebrowsing.forceMediaMemoryCache", true); // [FF75+]
+user_pref("browser.cache.offline.enable", false); // PREF: Do not download URLs for the offline cache
+user_pref("browser.cache.disk_cache_ssl", false); // PREF: Disable Caching of SSL Pages
+
 /*** OVERRIDE ***/
 user_pref("browser.search.countryCode", "US"); //  Disable GeoIP lookup on your address to set default search engine region
 user_pref("browser.search.region", "US");
