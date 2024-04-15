@@ -215,7 +215,7 @@ user_pref("browser.tabs.searchclipboardfor.middleclick", false); // [DEFAULT: fa
 
 /** DOWNLOADS ***/
 user_pref("browser.download.useDownloadDir", false); //  Always ask the user where to download
-//user_pref("browser.download.alwaysOpenPanel", false);
+user_pref("browser.download.alwaysOpenPanel", false);
 user_pref("browser.download.manager.addToRecentDocs", false);
 
 /** EXTENSIONS ***/
