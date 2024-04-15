@@ -3,7 +3,7 @@ https://github.com/arkenfox/user.js
 https://github.com/pyllyukko/user.js
 
 Installation
-Windows 7 	%APPDATA%\Mozilla\Firefox\Profiles\XXXXXXXX.your_profile_name\user.js
+Windows 	%APPDATA%\Mozilla\Firefox\Profiles\XXXXXXXX.your_profile_name\user.js
 Linux 	~/.mozilla/firefox/XXXXXXXX.your_profile_name/user.js
 OS X 	~/Library/Application Support/Firefox/Profiles/XXXXXXXX.your_profile_name
 Android 	/data/data/org.mozilla.firefox/files/mozilla/XXXXXXXX.your_profile_name and see issue #14
@@ -53,7 +53,7 @@ user_pref("browser.send_pings.require_same_host", true); //  When browser pings 
 user_pref("camera.control.face_detection.enabled", false); //  Disable face detection
 user_pref("clipboard.autocopy", false); //  Do not automatically send selection to clipboard on some Linux platforms
 user_pref("javascript.use_us_english_locale", true); //  Prevent leaking application locale/date format using JavaScript
-user_pref("keyword.enabled", false); // Search by addressbar - Do not submit invalid URIs entered in the address bar to the default search engine - 
+//user_pref("keyword.enabled", false); // Search by addressbar - Do not submit invalid URIs entered in the address bar to the default search engine
 user_pref("network.manage-offline-status", false); //  Don't monitor OS online/offline connection state
 user_pref("media.video_stats.enabled", false); //  Disable video stats to reduce fingerprinting threat
 user_pref("browser.casting.enabled", false); //  Disable SSDP
@@ -61,7 +61,7 @@ user_pref("browser.aboutHomeSnippets.updateUrl", ""); //  Disable downloading ho
 user_pref("browser.search.update", false); //  Never check updates for search engines
 user_pref("browser.topsites.contile.enabled", false); //  Disable (parts of?) "TopSites"
 user_pref("network.negotiate-auth.allow-insecure-ntlm-v1", false); //  Disallow NTLMv1
-user_pref("browser.chrome.site_icons", false); //  Disable downloading of favicons in response to favicon fingerprinting techniques
+//user_pref("browser.chrome.site_icons", false); //  Disable downloading of favicons in response to favicon fingerprinting techniques
 
 /*** STARTUP ***/
 user_pref("browser.startup.blankWindow", false); //  enable RFP letterboxing / resizing of inner window [FF67+] (disabled)
@@ -79,7 +79,7 @@ user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 
 /*** GEOLOCATION ***/
-user_pref("geo.enabled", false);
+//user_pref("geo.enabled", false);
 user_pref("geo.wifi.uri", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
 user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
 user_pref("geo.provider.ms-windows-location", false); // [WINDOWS]
@@ -215,7 +215,7 @@ user_pref("browser.tabs.searchclipboardfor.middleclick", false); // [DEFAULT: fa
 
 /** DOWNLOADS ***/
 user_pref("browser.download.useDownloadDir", false); //  Always ask the user where to download
-user_pref("browser.download.alwaysOpenPanel", false);
+//user_pref("browser.download.alwaysOpenPanel", false);
 user_pref("browser.download.manager.addToRecentDocs", false);
 
 /** EXTENSIONS ***/
