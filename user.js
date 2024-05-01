@@ -27,39 +27,36 @@ user_pref("browser.cache.offline.enable", false); // PREF: Do not download URLs 
 user_pref("browser.cache.disk_cache_ssl", false); // PREF: Disable Caching of SSL Pages
 
 /*** OVERRIDE ***/
-user_pref("browser.search.countryCode", "US"); //  Disable GeoIP lookup on your address to set default search engine region
-user_pref("browser.search.region", "US");
+//user_pref("browser.search.countryCode", "US"); //  Disable GeoIP lookup on your address to set default search engine region
+//user_pref("browser.search.region", "US");
 //user_pref("browser.search.geoip.url", "");
-user_pref("intl.accept_languages", "en-US, en"); //  Set Accept-Language HTTP header to en-US regardless of Firefox localization
-user_pref("intl.locale.matchOS", false); //  Don't use OS values to determine locale, force using Firefox locale setting
-user_pref("browser.search.geoSpecificDefaults", false); // Use LANG environment variable to choose locale (disabled)
-user_pref("general.buildID.override", "20100101"); //  Don't reveal build ID
-user_pref("browser.startup.homepage_override.buildID", "20100101");
+//user_pref("intl.accept_languages", "en-US, en"); //  Set Accept-Language HTTP header to en-US regardless of Firefox localization
+//user_pref("intl.locale.matchOS", false); //  Don't use OS values to determine locale, force using Firefox locale setting
+//user_pref("browser.search.geoSpecificDefaults", false); // Use LANG environment variable to choose locale (disabled)
+//user_pref("general.buildID.override", "20100101"); //  Don't reveal build ID
+//user_pref("browser.startup.homepage_override.buildID", "20100101");
+//user_pref("dom.maxHardwareConcurrency", 2); //  Spoof dual-core CPU
 
 /*** INFORMATION LEAKING ***/
-user_pref("dom.netinfo.enabled", false); //  Disable leaking network/browser connection information via Javascript
-user_pref("dom.vr.enabled", false); //  Disable virtual reality devices APIs
-user_pref("dom.vibrator.enabled",  false); //  Disable vibrator API
-user_pref("dom.gamepad.enabled", false); //  Disable gamepad API to prevent USB device enumeration
-user_pref("dom.maxHardwareConcurrency", 2); //  Spoof dual-core CPU
-user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false); //  Disable sending Flash Player crash reports
-user_pref("dom.ipc.plugins.reportCrashURL", false); //  When Flash crash reports are enabled, don't send the visited URL in the crash report
-user_pref("dom.flyweb.enabled", false); //  Disable FlyWeb (discovery of LAN/proximity IoT devices that expose a Web interface)
-user_pref("beacon.enabled", false); //  Disable "beacon" asynchronous HTTP transfers (used for analytics)
-user_pref("media.webspeech.recognition.enable", false); //  Disable speech recognition
-user_pref("device.sensors.enabled", false); //  Disable sensor API
-user_pref("browser.send_pings", false); //  Disable pinging URIs specified in HTML <a> ping= attributes
+//user_pref("dom.netinfo.enabled", false); //  Disable leaking network/browser connection information via Javascript
+//user_pref("dom.vr.enabled", false); //  Disable virtual reality devices APIs
+//user_pref("dom.vibrator.enabled",  false); //  Disable vibrator API
+//user_pref("dom.gamepad.enabled", false); //  Disable gamepad API to prevent USB device enumeration
+//user_pref("dom.flyweb.enabled", false); //  Disable FlyWeb (discovery of LAN/proximity IoT devices that expose a Web interface)
+//user_pref("beacon.enabled", false); //  Disable "beacon" asynchronous HTTP transfers (used for analytics)
+//user_pref("media.webspeech.recognition.enable", false); //  Disable speech recognition
+//user_pref("device.sensors.enabled", false); //  Disable sensor API
+//user_pref("browser.send_pings", false); //  Disable pinging URIs specified in HTML <a> ping= attributes
 user_pref("browser.send_pings.require_same_host", true); //  When browser pings are enabled, only allow pinging the same host as the origin page
-user_pref("camera.control.face_detection.enabled", false); //  Disable face detection
-user_pref("clipboard.autocopy", false); //  Do not automatically send selection to clipboard on some Linux platforms
-user_pref("javascript.use_us_english_locale", true); //  Prevent leaking application locale/date format using JavaScript
+//user_pref("camera.control.face_detection.enabled", false); //  Disable face detection
+//user_pref("clipboard.autocopy", false); //  Do not automatically send selection to clipboard on some Linux platforms
+//user_pref("javascript.use_us_english_locale", true); //  Prevent leaking application locale/date format using JavaScript
 //user_pref("keyword.enabled", false); // Search by addressbar - Do not submit invalid URIs entered in the address bar to the default search engine
-user_pref("network.manage-offline-status", false); //  Don't monitor OS online/offline connection state
-user_pref("media.video_stats.enabled", false); //  Disable video stats to reduce fingerprinting threat
-user_pref("browser.casting.enabled", false); //  Disable SSDP
+//user_pref("network.manage-offline-status", false); //  Don't monitor OS online/offline connection state
+//user_pref("media.video_stats.enabled", false); //  Disable video stats to reduce fingerprinting threat
+//user_pref("browser.casting.enabled", false); //  Disable SSDP
 user_pref("browser.aboutHomeSnippets.updateUrl", ""); //  Disable downloading homepage snippets/messages from Mozilla
-user_pref("browser.search.update", false); //  Never check updates for search engines
-user_pref("browser.topsites.contile.enabled", false); //  Disable (parts of?) "TopSites"
+//user_pref("browser.search.update", false); //  Never check updates for search engines
 user_pref("network.negotiate-auth.allow-insecure-ntlm-v1", false); //  Disallow NTLMv1
 //user_pref("browser.chrome.site_icons", false); //  Disable downloading of favicons in response to favicon fingerprinting techniques
 
@@ -77,6 +74,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false); //  Disable Extension recommendations (Firefox >= 65)
 user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
+user_pref("browser.topsites.contile.enabled", false); //  Disable (parts of?) "TopSites"
 
 /*** GEOLOCATION ***/
 //user_pref("geo.enabled", false);
@@ -124,12 +122,15 @@ user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("browser.discovery.enabled", false);
 user_pref("loop.logDomains", false); //  Disable Firefox Hello metrics collection
+user_pref("privacy.globalprivacycontrol.enabled",		true); // PREF: Enable Global Privacy Control (GPC) (Firefox >= 120)
 
 /** CRASH REPORTS ***/
 user_pref("breakpad.reportURL", "");
 user_pref("browser.tabs.crashReporting.sendReport", false); // [FF44+]
 user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false); // [DEFAULT: false]
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
+user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false); //  Disable sending Flash Player crash reports
+user_pref("dom.ipc.plugins.reportCrashURL", false); //  When Flash crash reports are enabled, don't send the visited URL in the crash report
 
 /*** SAFE BROWSING (SB) ***/
 user_pref("browser.safebrowsing.downloads.remote.enabled", false); //  Disable querying Google Application Reputation database for downloaded binary files
